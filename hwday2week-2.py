@@ -124,7 +124,7 @@ while True:
         print("Ticket opened successfully!")
 
     elif choice == "2":
-        ticket_id = int(input("Enter ticket ID: "))
+        ticket_id = input("Enter ticket ID: "))         #changed input into int 
         new_status = input("Enter new status (Open/Closed): ")
         if ticket_system.update_ticket_status(ticket_id, new_status):
             print("Ticket status updated successfully!")
